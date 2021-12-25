@@ -38,12 +38,13 @@ function validate(){
     for(var i=program.length-1;i>=0;i--){
         if(program[i].checked){
             check=ture;
-        }}
+        }
+    }
         if(check==false){
         alert("program is required")
         return false;
     }
-    return false;}
+    
     function validateString(id){
         var element=document.getElementById(id);
         var regExp=/^[a-zA-Z ]{15}$/;
